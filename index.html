@@ -1,23 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>黄杰 | 外贸业务员 / 国际销售</title>
-
-<meta name="description"
-content="黄杰｜2026届应届生｜美国4个月真实全英文工作经历｜外贸业务员｜国际销售｜海外市场开发">
+<title>黄杰 | 外贸业务员 · 海外市场开发</title>
+<meta name="description" content="黄杰，22岁，海外客户开发、Google开发、社媒开发、国际销售。">
 
 <style>
 :root {
-    --primary: #2468a8;
-    --primary-light: #eef6fd;
-    --text: #17212b;
-    --text-light: #52606d;
+    --primary: #245f91;
+    --light: #f3f7fa;
+    --text: #202b36;
+    --sub: #586675;
     --muted: #89939e;
-    --line: #dfe5eb;
-    --bg: #eef1f4;
+    --line: #e1e7ed;
 }
 
 * {
@@ -27,111 +24,91 @@ content="黄杰｜2026届应届生｜美国4个月真实全英文工作经历｜
 }
 
 body {
-    background: var(--bg);
+    background: #edf0f3;
     color: var(--text);
-    font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        "PingFang SC",
-        "Microsoft YaHei",
-        Arial,
-        sans-serif;
-    line-height: 1.65;
+    font-family: "Microsoft YaHei", "PingFang SC",
+    Arial, sans-serif;
+    line-height: 1.6;
 }
-
-/* ===== 页面 ===== */
 
 .resume {
     width: 210mm;
     min-height: 297mm;
-    margin: 30px auto;
-    background: #fff;
-    padding: 16mm 18mm 13mm;
-    box-shadow: 0 12px 35px rgba(20, 35, 50, 0.10);
+    margin: 25px auto;
+    padding: 15mm 17mm;
+    background: white;
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
 }
-
-/* ===== 顶部 ===== */
 
 .header {
     display: grid;
     grid-template-columns: 1fr 110px;
     gap: 25px;
     align-items: center;
-    padding-bottom: 19px;
-    border-bottom: 1px solid var(--line);
+    padding-bottom: 17px;
+    border-bottom: 2px solid var(--primary);
 }
 
 .name {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 750;
     letter-spacing: 3px;
-    color: #111827;
 }
 
 .role {
-    margin-top: 4px;
-    font-size: 17px;
+    margin-top: 5px;
+    font-size: 16px;
     color: var(--primary);
     font-weight: 650;
 }
 
 .headline {
-    margin-top: 9px;
-    font-size: 12px;
-    color: var(--text-light);
+    margin-top: 8px;
+    font-size: 11.5px;
+    color: var(--sub);
 }
 
 .contact {
     display: flex;
     flex-wrap: wrap;
     gap: 5px 18px;
-    margin-top: 13px;
-    font-size: 11px;
-    color: var(--text-light);
-}
-
-.contact span {
-    white-space: nowrap;
+    margin-top: 12px;
+    font-size: 10.8px;
+    color: var(--sub);
 }
 
 .photo {
     width: 105px;
     height: 132px;
     object-fit: cover;
-    border-radius: 7px;
-    border: 1px solid #d7dde3;
+    border-radius: 5px;
+    border: 1px solid var(--line);
 }
 
-/* ===== Section ===== */
-
 .section {
-    margin-top: 19px;
+    margin-top: 17px;
 }
 
 .section-title {
     display: flex;
     align-items: center;
     gap: 9px;
-    margin-bottom: 9px;
-    font-size: 15px;
+    margin-bottom: 8px;
+    font-size: 14px;
     font-weight: 750;
-    color: #18232e;
 }
 
 .section-title::before {
     content: "";
     width: 4px;
-    height: 17px;
-    border-radius: 2px;
+    height: 16px;
     background: var(--primary);
+    border-radius: 2px;
 }
 
-/* ===== 个人简介 ===== */
-
 .profile {
-    font-size: 11.8px;
-    color: #34404b;
+    font-size: 11.3px;
+    color: #394653;
     text-align: justify;
 }
 
@@ -139,99 +116,83 @@ body {
     color: #17212b;
 }
 
-/* ===== 核心能力 ===== */
-
 .capability-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 9px 25px;
+    gap: 9px 12px;
 }
 
 .capability {
     padding: 8px 10px;
-    background: #fafbfd;
-    border: 1px solid #e8edf2;
-    border-radius: 5px;
+    background: var(--light);
+    border: 1px solid #e5ebf0;
+    border-radius: 4px;
 }
 
 .capability-title {
-    font-size: 12px;
+    color: var(--primary);
+    font-size: 11.8px;
     font-weight: 700;
-    color: #1d4f7a;
     margin-bottom: 3px;
 }
 
 .capability-text {
-    font-size: 11px;
-    color: var(--text-light);
+    font-size: 10.5px;
+    color: var(--sub);
 }
-
-/* ===== 工作经历 ===== */
 
 .item {
-    margin-bottom: 15px;
-}
-
-.item:last-child {
-    margin-bottom: 0;
+    margin-bottom: 12px;
 }
 
 .item-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 20px;
+    gap: 15px;
 }
 
 .company {
-    font-size: 13.5px;
+    font-size: 12.5px;
     font-weight: 750;
-    color: #17212b;
 }
 
 .position {
-    font-size: 11.8px;
-    color: var(--text-light);
-    margin-top: 1px;
+    font-size: 11px;
+    color: var(--sub);
 }
 
 .date {
-    font-size: 10.8px;
+    font-size: 10.5px;
     color: var(--muted);
     white-space: nowrap;
 }
 
 ul {
     padding-left: 17px;
-    margin-top: 5px;
+    margin-top: 4px;
 }
 
 li {
-    font-size: 11.4px;
-    color: #34404b;
+    font-size: 10.8px;
+    color: #394653;
     margin-bottom: 3px;
 }
 
-/* ===== 外贸实践 ===== */
-
 .practice {
-    border-left: 2px solid #cfe3f5;
-    padding-left: 13px;
+    border-left: 2px solid #cbddea;
+    padding-left: 12px;
 }
 
 .practice-title {
-    font-size: 13px;
+    font-size: 12.5px;
     font-weight: 700;
-    color: #17212b;
 }
 
 .practice-subtitle {
-    font-size: 11px;
     color: var(--muted);
-    margin-top: 1px;
+    font-size: 10px;
 }
-
-/* ===== 教育 ===== */
 
 .education-header {
     display: flex;
@@ -240,37 +201,32 @@ li {
 }
 
 .school {
-    font-size: 13.5px;
+    font-size: 12.5px;
     font-weight: 750;
 }
 
 .degree {
-    font-size: 11.8px;
-    color: var(--text-light);
-    margin-top: 1px;
+    font-size: 11px;
+    color: var(--sub);
 }
-
-/* ===== 技能 ===== */
 
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0 28px;
+    gap: 0 22px;
 }
 
 .skill {
     padding: 6px 0;
     border-bottom: 1px solid #edf0f3;
-    font-size: 11.3px;
-    color: #34404b;
+    font-size: 10.6px;
+    color: #394653;
 }
 
 .skill strong {
     color: #17212b;
     margin-right: 5px;
 }
-
-/* ===== 标签 ===== */
 
 .tags {
     display: flex;
@@ -279,47 +235,22 @@ li {
 }
 
 .tag {
-    padding: 4px 10px;
-    border-radius: 4px;
-    background: var(--primary-light);
-    border: 1px solid #d6e8f8;
-    color: #245d91;
-    font-size: 11px;
-}
-
-/* ===== 底部 ===== */
-
-.bottom {
-    display: grid;
-    grid-template-columns: 1fr 105px;
-    gap: 20px;
-    align-items: end;
-}
-
-.qr {
-    width: 94px;
-    height: 94px;
-    display: block;
-    margin: 0 auto;
-}
-
-.qr-label {
-    text-align: center;
-    margin-top: 3px;
-    font-size: 9px;
-    color: var(--muted);
+    padding: 3px 9px;
+    background: var(--light);
+    border: 1px solid #dce7ef;
+    border-radius: 3px;
+    color: var(--primary);
+    font-size: 10.5px;
 }
 
 .footer {
-    margin-top: 13px;
+    margin-top: 16px;
     padding-top: 8px;
     border-top: 1px solid var(--line);
     text-align: center;
-    font-size: 8.5px;
     color: #a0a8b1;
+    font-size: 9px;
 }
-
-/* ===== 打印 ===== */
 
 @media print {
     @page {
@@ -328,7 +259,7 @@ li {
     }
 
     body {
-        background: #fff;
+        background: white;
     }
 
     .resume {
@@ -339,25 +270,17 @@ li {
     }
 }
 
-/* ===== 手机 ===== */
-
-@media (max-width: 800px) {
-
-    body {
-        background: #fff;
-    }
-
+@media(max-width:800px) {
     .resume {
         width: 100%;
-        min-height: auto;
         margin: 0;
-        padding: 25px 20px;
+        padding: 24px 18px;
         box-shadow: none;
     }
 
     .header {
-        grid-template-columns: 1fr 88px;
-        gap: 15px;
+        grid-template-columns: 1fr 84px;
+        gap: 12px;
     }
 
     .photo {
@@ -366,11 +289,7 @@ li {
     }
 
     .name {
-        font-size: 29px;
-    }
-
-    .role {
-        font-size: 15px;
+        font-size: 27px;
     }
 
     .capability-grid,
@@ -386,10 +305,6 @@ li {
     .date {
         margin-top: 2px;
     }
-
-    .bottom {
-        grid-template-columns: 1fr 90px;
-    }
 }
 </style>
 </head>
@@ -398,20 +313,18 @@ li {
 
 <div class="resume">
 
-<!-- ================= 顶部 ================= -->
+<!-- 顶部个人信息 -->
 
 <header class="header">
-
     <div>
-
         <div class="name">黄杰</div>
 
         <div class="role">
-            外贸业务员 · 国际销售 · 海外市场开发
+            外贸业务员 · 海外销售 · 海外市场开发
         </div>
 
         <div class="headline">
-            2026届应届生　·　美国4个月真实全英文工作经历　·　英语实际工作沟通
+            22岁 ｜ 4个月美国真实工作经历 ｜ 英语实际沟通
         </div>
 
         <div class="contact">
@@ -419,69 +332,60 @@ li {
             <span>✉️ 2200795064@qq.com</span>
             <span>📍 深圳 / 广州</span>
         </div>
-
     </div>
 
-    <img
-        class="photo"
-        src="profile.jpg"
-        alt="黄杰"
-    >
-
+    <!-- 保留头像位置，图片与HTML放在同一文件夹 -->
+    <img class="photo" src="profile.jpg" alt="个人照片">
 </header>
 
 
-<!-- ================= 个人简介 ================= -->
+<!-- 个人简介 -->
 
 <section class="section">
-
-    <h2 class="section-title">
-        个人简介
-    </h2>
+    <h2 class="section-title">个人简介</h2>
 
     <p class="profile">
-
-        2026届人工智能技术应用专业毕业生，拥有
-        <strong>4个月美国真实全英文工作经历</strong>，
-        长期处于英语工作环境，具备较强的英文沟通、跨文化交流及陌生环境适应能力。
-
+        人工智能技术应用专业毕业，具备海外真实工作经历及实际英语沟通能力。
+        曾在美国工作4个月，能够适应全英文工作环境，与不同文化背景的人员进行日常沟通与协作。
         <br><br>
 
-        对外贸及国际销售方向有明确兴趣，已主动了解
-        <strong>海外客户开发、询盘处理、报价、商务沟通、订单跟进及售后</strong>
-        等基础业务流程，并持续关注海外市场及不同产品的销售方式。
-
-        日常长期使用 Facebook、Instagram、TikTok 等海外社交平台，
-        熟悉海外内容、评论互动及私信沟通等基本场景；
-        同时具备 Google 信息检索、AI工具辅助信息整理及基础市场调研能力。
-
+        具备海外客户开发的基础实操能力，熟悉通过
+        <strong>Google搜索、企业官网及公开商业信息</strong>
+        寻找潜在客户，并能够结合Facebook、Instagram、LinkedIn等社交平台开展客户筛选、
+        联系及跟进。了解外贸业务中的询盘、报价、PI（形式发票）、
+        订单跟进等基本业务环节。
         <br><br>
 
-        希望进入具有真实海外业务的团队，从客户开发和业务跟进开始，
-        逐步建立产品、市场、客户开发、谈判及成交能力，长期发展为独立外贸业务人员。
-
+        能够使用AI工具辅助客户背景调查、海外市场信息搜集、竞品分析及英文商务内容整理。
+        希望在制造业、工贸一体企业或外贸团队从事海外业务开发与国际销售工作。
     </p>
-
 </section>
 
 
-<!-- ================= 核心能力 ================= -->
+<!-- 核心业务能力 -->
 
 <section class="section">
-
-    <h2 class="section-title">
-        核心能力
-    </h2>
+    <h2 class="section-title">核心业务能力</h2>
 
     <div class="capability-grid">
 
         <div class="capability">
             <div class="capability-title">
-                海外客户开发
+                Google客户开发
             </div>
             <div class="capability-text">
-                Google搜索、海外企业信息检索、社媒触达、潜在客户筛选、
-                首次联系及客户跟进。
+                Google关键词搜索、目标国家及行业筛选、
+                企业官网查找、客户背景调查、潜在客户信息整理。
+            </div>
+        </div>
+
+        <div class="capability">
+            <div class="capability-title">
+                社交媒体客户开发
+            </div>
+            <div class="capability-text">
+                Facebook、Instagram、LinkedIn等平台，
+                通过企业主页、社群、内容互动及私信寻找潜在客户。
             </div>
         </div>
 
@@ -490,53 +394,57 @@ li {
                 外贸业务流程
             </div>
             <div class="capability-text">
-                了解询盘、需求确认、报价、样品、谈判、下单、
-                生产/交付及售后等基础流程。
+                了解询盘回复、客户需求确认、产品报价、
+                PI形式发票、订单跟进及售后维护等业务环节。
             </div>
         </div>
 
         <div class="capability">
             <div class="capability-title">
-                海外社交媒体
+                英语商务沟通
             </div>
             <div class="capability-text">
-                Facebook、Instagram、TikTok、WhatsApp、
-                LinkedIn等平台的日常使用及基础海外沟通。
+                CET-4，美国4个月全英文工作经历，
+                能够进行实际英语交流、信息确认及日常业务沟通。
             </div>
         </div>
 
         <div class="capability">
             <div class="capability-title">
-                英语与跨文化沟通
+                海外市场调研
             </div>
             <div class="capability-text">
-                CET-4；4个月美国全英文真实工作经历，
-                能够直接进行实际工作场景中的英文沟通。
+                目标市场信息搜集、竞争品牌研究、
+                产品对比及潜在客户分类。
+            </div>
+        </div>
+
+        <div class="capability">
+            <div class="capability-title">
+                AI工具应用
+            </div>
+            <div class="capability-text">
+                使用AI辅助资料搜集、客户背景研究、
+                市场分析及英文邮件和商务内容优化。
             </div>
         </div>
 
     </div>
-
 </section>
 
 
-<!-- ================= 工作经历 ================= -->
+<!-- 工作经历 -->
 
 <section class="section">
-
-    <h2 class="section-title">
-        工作经历
-    </h2>
+    <h2 class="section-title">工作经历</h2>
 
     <div class="item">
 
         <div class="item-header">
-
             <div>
                 <div class="company">
                     Continental Pools LLC · 美国
                 </div>
-
                 <div class="position">
                     Lifeguard / 救生员
                 </div>
@@ -545,35 +453,25 @@ li {
             <div class="date">
                 2026.06 – 2026.09
             </div>
-
         </div>
 
         <ul>
-
             <li>
-                在美国真实工作环境中完成4个月全英文工作，
-                日常使用英语与美国及不同国籍同事进行沟通和协作。
+                在美国真实工作环境中完成4个月工作，
+                日常使用英语与美国及不同国籍同事进行沟通协作。
             </li>
-
             <li>
-                独立适应海外工作及团队环境，在陌生文化和语言环境下完成岗位职责。
+                独立适应海外工作和生活环境，
+                能够在不同文化背景下完成岗位职责。
             </li>
-
             <li>
-                持续处理工作现场的沟通与实际问题，培养快速理解、
-                沟通协调及问题解决能力。
+                按照岗位标准、工作流程及安全要求开展工作，
+                具备执行力、责任意识和团队协作能力。
             </li>
-
             <li>
-                接受标准化培训、岗位考核及工作流程要求，
-                具备较强的执行力和规则意识。
+                在实际工作中处理现场沟通及突发情况，
+                培养问题处理和跨文化交流能力。
             </li>
-
-            <li>
-                通过长期海外工作经历，对海外用户沟通方式、
-                文化差异及不同工作习惯形成了直接理解。
-            </li>
-
         </ul>
 
     </div>
@@ -581,74 +479,66 @@ li {
 </section>
 
 
-<!-- ================= 外贸业务实践 ================= -->
+<!-- 海外业务实操 -->
 
 <section class="section">
+    <h2 class="section-title">海外业务实操与项目经验</h2>
 
-    <h2 class="section-title">
-        外贸业务实践
-    </h2>
+    <div class="item">
 
-    <div class="practice">
+        <div class="practice">
 
-        <div class="practice-title">
-            海外市场与客户开发实践
+            <div class="practice-title">
+                电助力自行车海外市场业务实践
+            </div>
+
+            <div class="practice-subtitle">
+                E-bike Overseas Market & Business Development
+                ｜ 2026.11
+            </div>
+
+            <ul>
+                <li>
+                    接触RINCC电助力自行车产品及R200热销车型，
+                    了解产品定位、产品卖点及海外销售场景。
+                </li>
+
+                <li>
+                    围绕意大利市场开展竞品资料搜集，
+                    关注ENGWE、VITILAN、OVIVO、G-FORCE、
+                    VICTRIP等品牌及产品差异。
+                </li>
+
+                <li>
+                    了解B2B海外业务模式，关注经销商、
+                    零售商等潜在客户类型及客户开发方向。
+                </li>
+
+                <li>
+                    接触Google及海外社交媒体客户开发方法，
+                    结合目标市场和客户类型进行信息搜集与筛选。
+                </li>
+
+                <li>
+                    学习外贸报价及PI（形式发票）等基础业务资料，
+                    理解从客户沟通到订单推进的基本流程。
+                </li>
+            </ul>
+
         </div>
-
-        <div class="practice-subtitle">
-            Overseas Market & Business Development Practice
-        </div>
-
-        <ul>
-
-            <li>
-                通过 Google、社交媒体及公开企业信息渠道了解海外企业、
-                品牌及潜在客户，练习按照国家、产品及客户类型进行基础筛选。
-            </li>
-
-            <li>
-                结合 Facebook、Instagram、TikTok 等海外社交平台的长期使用经验，
-                关注海外用户的内容偏好、互动方式及社交媒体沟通习惯。
-            </li>
-
-            <li>
-                了解通过社媒内容、评论互动、私信及 WhatsApp 等方式建立初步联系的基本方式。
-            </li>
-
-            <li>
-                学习整理潜在客户信息，建立基础客户跟进记录，
-                并根据客户需求进行后续沟通。
-            </li>
-
-            <li>
-                主动学习外贸业务基础流程，包括询盘、需求确认、产品推荐、
-                报价、谈判、订单跟进及售后维护。
-            </li>
-
-            <li>
-                使用AI工具辅助进行海外市场信息整理、竞品资料搜集、
-                客户背景研究及英文商务内容优化。
-            </li>
-
-        </ul>
 
     </div>
 
 </section>
 
 
-<!-- ================= 教育经历 ================= -->
+<!-- 教育经历 -->
 
 <section class="section">
-
-    <h2 class="section-title">
-        教育经历
-    </h2>
+    <h2 class="section-title">教育经历</h2>
 
     <div class="education-header">
-
         <div>
-
             <div class="school">
                 深圳信息职业技术大学
             </div>
@@ -656,154 +546,114 @@ li {
             <div class="degree">
                 人工智能技术应用 · 专科
             </div>
-
         </div>
 
         <div class="date">
             2026届
         </div>
-
     </div>
 
     <ul>
-
         <li>
             具备信息检索、数据处理、AI工具应用及基础编程能力。
         </li>
-
         <li>
-            具备Python、Linux等技术基础，能够利用技术工具辅助信息整理和工作效率提升。
+            具备Python、Linux等技术基础，持有RHCSA认证。
         </li>
-
     </ul>
-
 </section>
 
 
-<!-- ================= 专业能力 ================= -->
+<!-- 专业技能 -->
 
 <section class="section">
-
-    <h2 class="section-title">
-        专业能力
-    </h2>
+    <h2 class="section-title">专业技能</h2>
 
     <div class="skills">
 
         <div class="skill">
+            <strong>客户开发</strong>
+            Google搜索、企业信息筛选、客户背调
+        </div>
+
+        <div class="skill">
+            <strong>社媒平台</strong>
+            Facebook / Instagram / LinkedIn / WhatsApp
+        </div>
+
+        <div class="skill">
+            <strong>外贸知识</strong>
+            询盘、报价、PI、订单跟进
+        </div>
+
+        <div class="skill">
             <strong>英语</strong>
-            CET-4；美国4个月全英文工作经历；实际工作英语沟通
-        </div>
-
-        <div class="skill">
-            <strong>海外平台</strong>
-            Facebook / Instagram / TikTok / WhatsApp / LinkedIn
-        </div>
-
-        <div class="skill">
-            <strong>信息检索</strong>
-            Google Search、企业信息搜集、竞品及市场资料整理
-        </div>
-
-        <div class="skill">
-            <strong>办公工具</strong>
-            Excel / Word / PowerPoint
+            CET-4 / 海外实际工作沟通
         </div>
 
         <div class="skill">
             <strong>AI工具</strong>
-            AI辅助信息整理、资料研究及英文内容优化
+            信息搜集、市场研究、英文内容辅助
+        </div>
+
+        <div class="skill">
+            <strong>办公软件</strong>
+            Excel / Word / PowerPoint
         </div>
 
         <div class="skill">
             <strong>技术基础</strong>
-            Python / Linux / RHCSA
+            Python / Linux
+        </div>
+
+        <div class="skill">
+            <strong>其他</strong>
+            RHCSA认证
         </div>
 
     </div>
-
 </section>
 
 
-<!-- ================= 证书 ================= -->
+<!-- 证书 -->
 
 <section class="section">
-
-    <h2 class="section-title">
-        证书
-    </h2>
+    <h2 class="section-title">证书</h2>
 
     <div class="tags">
-
-        <span class="tag">
-            CET-4
-        </span>
-
-        <span class="tag">
-            RHCSA
-        </span>
-
+        <span class="tag">CET-4</span>
+        <span class="tag">RHCSA</span>
     </div>
-
 </section>
 
 
-<!-- ================= 求职目标 ================= -->
+<!-- 求职方向 -->
 
 <section class="section">
-
-    <h2 class="section-title">
-        求职目标
-    </h2>
+    <h2 class="section-title">求职意向</h2>
 
     <p class="profile">
+        <strong>目标岗位：</strong>
+        外贸业务员、海外销售、海外市场开发、国际业务助理。
+        <br>
 
-        希望加入具有真实海外市场及出口业务的制造型企业、
-        工贸一体企业或专业外贸团队，从海外客户开发及业务跟进开始，
-        逐步独立负责客户和订单，长期发展为成熟的国际业务人员。
+        <strong>目标行业：</strong>
+        制造业、电子产品、智能硬件、机械设备及其他具有出口业务的行业。
+        <br>
 
+        <strong>工作地点：</strong>
+        深圳、东莞、广州、惠州。
+        <br>
+
+        希望加入具有真实海外市场和出口业务的企业，
+        参与海外客户开发、业务沟通及订单跟进，
+        持续提升独立开发客户与业务成交能力。
     </p>
-
-</section>
-
-
-<!-- ================= 二维码 ================= -->
-
-<section class="section bottom">
-
-    <div>
-
-        <h2 class="section-title">
-            在线简历
-        </h2>
-
-        <p class="profile">
-            扫描右侧二维码查看我的在线简历。
-            <br>
-            Online Resume
-        </p>
-
-    </div>
-
-    <div>
-
-        <img
-            class="qr"
-            src="resume-qrcode.png"
-            alt="在线简历二维码"
-        >
-
-        <div class="qr-label">
-            扫码查看
-        </div>
-
-    </div>
-
 </section>
 
 
 <div class="footer">
-    Huang Jie · Resume · 2026
+    HUANG JIE · RESUME · 2026
 </div>
 
 </div>
